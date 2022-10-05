@@ -35,6 +35,7 @@ module.exports = {
         global.author = 'Made By Turbo And Ajmal'
         global.packname2 = 'Made With'
         global.author2 = 'Kakashi Md By Turbo & Ajmal'
+        global.wm3�=�'Kakashi Whatapp Md Made By Turbo & Ajmal'
         global.wm2 = 'Kakashi Md' + ' ' + 'By Turbo And Ajmal'
         global.wm = 'Kakashi Md'
         global.colong1 = 'Kakashi Md'
@@ -384,17 +385,19 @@ module.exports = {
             let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
             global.prems = global.db.data.users[m.sender].premium ///JSON.parse(fs.readFileSync('./data/premium.json')) // Premium user has unlimited limit
-            let isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-            let isOwner = isROwner || m.fromMe
+            const isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+            const isOwner = isROwner || m.fromMe
             if (!isOwner && db.data.settings.self) return
-            let isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-            let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-            let groupMetadata = (m.isGroup ? (conn.chats[m.chat] || {}).metadata : {}) || {}
-            let participants = (m.isGroup ? groupMetadata.participants : []) || []
-            let user = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) === m.sender) : {}) || {} // User Data
-            let bot = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) == this.user.jid) : {}) || {} // Your Data
-            let isAdmin = user && user.admin || false // Is User Admin?
-            let isBotAdmin = bot && bot.admin || false // Are you Admin?
+            const isMods = isOwner || process.env.MODS + '@s.whatsapp.net').includes(m.sender)
+            const isPrems = isROwner || db.data.users[m.sender].premium || false
+            //let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+            if (!isPrems && !m.isGroup && global.db.data.settings.groupOnly) return
+            const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}
+            const participants = (m.isGroup ? groupMetadata.participants : []) || []
+            const user = (m.isGroup ? participants.find(u => this.decodeJid(u.id) === m.sender) : {}) || {} // User Data
+            const bot = (m.isGroup ? participants.find(u => this.decodeJid(u.id) == this.user.jid) : {}) || {} // Your Data
+            const isAdmin = user && user?.admin || false // Is User Admin?
+            const isBotAdmin = bot && bot?.admin || false // Are you Admin?
 
             for (let name in global.plugins) {
                 let plugin = global.plugins[name]
@@ -504,11 +507,13 @@ module.exports = {
                     if (xp > 200) m.reply('Ngecit -_-') // Hehehe
                     else m.exp += xp
                     if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                        this.sendButton(m.chat, `Your limit is up, please buy via *${usedPrefix}buy*`, wm, 'Buy', '.buy', m)
-                        continue
+                        this.sendButton(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, wm, 'Buy', '.buy', m)
+                        // this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
+                        continue // Limit habis
                     }
                     if (plugin.level > _user.level) {
-                        this.sendButton(m.chat, `diperlukan level ${plugin.level} to use this command. Your level ${_user.level}`, wm, `Levelup`, `.levelup`, m)
+                        this.sendButton(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, wm, `Levelup`, `.levelup`, m)
+                        // this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
                         continue // If the level has not been reached
                     }
                     let extra = {
