@@ -306,20 +306,6 @@ ${'```%npmdesc```'}
          enabled: !plugin.disabled, 
        } 
      }) 
-     if (teks == '404') {
- 	let kaka = `${pickRandom(['https://i.imgur.com/4rRZ4c7.jpeg', 'https://i.imgur.com/7c88Zco.jpeg', 'https://i.imgur.com/ihNQ9ky.jpeg', 'https://i.imgur.com/SKUjlZw.jpeg','https://i.imgur.com/imKhdgW.jpeg','https://i.imgur.com/c17uGDe.jpeg'])}` 
- 	let ori = `Hi Bro/Sis, @${m.sender.split`@`[0]}
- 
-Im Kakashi Bot, One Of The Whatsapp Bots Ready To Help You Make Things Easier Like Making Stickers And More, If You Want To Request A Feature, Please Type #request Message Or Other Features !`
-conn.sendMessage(m.chat, {
-    	react: {
-    		text: emot,
-    		key: m.key
-    	}
-    })	
-return conn.send2ButtonLoc(m.chat, kaka, ori, `Note : If You Use Old Wa Or Mod And Button It Doesnt Look Rectly Type ${_p}simplemenu`, 'COMMAND', '.simplemenu', 'OWNER', '.owner', m)
-    
-    }
   
      let groups = {} 
      for (let tag in tags) { 

@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) =>�
        month: 'long', 
        year: 'numeric' 
      }) 
-      let caption = ` ┌━––「 ˚DAFTAR MENU 」––━┈▧ 
+      let caption = ` ┌━––「 ˚ALL MENU 」––━┈▧ 
  │◦〉  ${_p}? all   
  │◦〉  ${_p}? rpg  
  │◦〉  ${_p}? anime  
