@@ -1,7 +1,7 @@
 let fs = require('fs')
 global.botnamecon = process.env.BOT_NAME
-global.owner = process.env.OWNER // Put your number to /src/owner.json
-global.mods = process.env.MODS // Want some help?
+global.owner = fs.readFileSync('./src/owner.json') // Put your number to /src/owner.json
+global.mods = fs.readFileSync('./src/moderator.json') // Want some help?
 global.thumbt = fs.readFileSync('./KakashiMedia/kakashi.jpg')
 global.fsx = 999999999999
 global.contact = [['916380260672', 'Turbo Mods', true], ['918590508376', 'Ajmal', true] ]
