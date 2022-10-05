@@ -388,7 +388,7 @@ module.exports = {
             const isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             const isOwner = isROwner || m.fromMe
             if (!isOwner && db.data.settings.self) return
-            const isMods = isOwner || process.env.MODS + '@s.whatsapp.net').includes(m.sender)
+            const isMods = isOwner || process.env.MODS + '@s.whatsapp.net'.includes(m.sender)
             const isPrems = isROwner || db.data.users[m.sender].premium || false
             //let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             if (!isPrems && !m.isGroup && global.db.data.settings.groupOnly) return
