@@ -409,9 +409,9 @@ ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, 
      throw e 
    } 
  } 
- handler.help = ['menu', 'help', '?'] 
+ handler.help = ['send?'] 
  handler.tags = ['main'] 
- handler.command = /^(m(enu)?|help|\?)$/i 
+ handler.command = /^(send?)$/i  
  handler.owner = false 
  handler.mods = false 
  handler.premium = false 
