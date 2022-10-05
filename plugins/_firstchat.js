@@ -11,9 +11,21 @@ handler.all = async function (m) {
     let user = global.db.data.users[m.sender]
     let name = conn.user.name
     let hao = `*Official Bot By @${'0'.split('@')[0]}* 
-*Powered By @${global.owner[1].split('@')[0]}*`
+*Powered By @${global.owner[0].split('@')[0]}*`
     if (new Date - user.pc < 86400000) return //
-        await conn.send3ButtonLoc(m.chat, 'https://i.imgur.com/4rRZ4c7.jpeg', ` ${ucapan()}, @${m.sender.split`@`[0]}
+        await conn.send2ButtonVid(m.chat, menuvideo, text.trim(), hao, 'Owner', '.owner', 'Rules', '.rules', m, { 
+     quoted: ftoko, 
+     contextInfo: { forwardingScore: 99999, isForwarded: true, 
+         externalAdReply: { 
+             title: 'Kakashi Whatsapp Md Bot', 
+             body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, 
+             description: `Turbo X Ajmal`, 
+             mediaType: 2, 
+           thumbnail: await genProfile(conn, m),
+          mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}` 
+         } 
+      } 
+     })
  ${user.banned ? 'you are banned' : `
 I Am Kakashi, Whatsapp Bot Which You Can Use To Make Stickers, Downloading Something, Playing Games, Etc.
 
