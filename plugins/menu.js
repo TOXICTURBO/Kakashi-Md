@@ -371,9 +371,9 @@ let ftt = `*Note:* If you find bugs, errors or difficulties in use, please repor
     return conn.sendMessage(m.chat, listMessage, { quoted: fkgif, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
     
     }
-handler.help = ['simplemenu']
+handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(simplemenu)$/i
+handler.command = /^(m(enu)?|help|\?)$/i 
  handler.owner = false 
  handler.mods = false 
  handler.premium = false 
