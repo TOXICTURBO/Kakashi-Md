@@ -306,6 +306,20 @@ ${'```%npmdesc```'}
          enabled: !plugin.disabled, 
        } 
      }) 
+     if (teks == '404') {
+ 	let kaka = `${pickRandom(['https://i.imgur.com/4rRZ4c7.jpeg', 'https://i.imgur.com/7c88Zco.jpeg', 'https://i.imgur.com/ihNQ9ky.jpeg', 'https://i.imgur.com/SKUjlZw.jpeg','https://i.imgur.com/imKhdgW.jpeg','https://i.imgur.com/c17uGDe.jpeg'])}` 
+ 	let ori = `Hi Bro/Sis, @${m.sender.split`@`[0]}
+ 
+Im Kakashi Bot, One Of The Whatsapp Bots Ready To Help You Make Things Easier Like Making Stickers And More, If You Want To Request A Feature, Please Type #request Message Or Other Features !`
+conn.sendMessage(m.chat, {
+    	react: {
+    		text: emot,
+    		key: m.key
+    	}
+    })	
+return conn.send2ButtonLoc(m.chat, kaka, ori, `Note : If You Use Old Wa Or Mod And Button It Doesnt Look Rectly Type ${_p}simplemenu`, 'COMMAND', '.simplemenu', 'OWNER', '.owner', m)
+    
+    }
   
      let groups = {} 
      for (let tag in tags) { 
@@ -365,7 +379,7 @@ ${'```%npmdesc```'}
              description: `Turbo X Ajmal`, 
              mediaType: 2, 
            thumbnail: await genProfile(conn, m),
-          mediaUrl: `https://instagram.com/`
+          mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}` 
          } 
       } 
      })
@@ -388,16 +402,16 @@ ${'```%npmdesc```'}
      //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m).catch(_ => conn.reply(m.chat, text.trim(), m))
   conn.sendFile(m.chat, 'kakashimp3', 'kakashimp3', null, m, true, {
 type: 'audioMessage', 
-ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, sourceUrl: `https://instagram.com/`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
+ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
      })
 } catch (e) { 
      conn.reply(m.chat, 'Sorry, the menu is in error', m) 
      throw e 
    } 
  } 
- handler.help = ['send?'] 
+ handler.help = ['menu', 'help', '?'] 
  handler.tags = ['main'] 
- handler.command = /^(send?)$/i  
+ handler.command = /^(m(enu)?|help|\?)$/i 
  handler.owner = false 
  handler.mods = false 
  handler.premium = false 
