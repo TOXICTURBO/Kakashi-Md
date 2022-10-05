@@ -384,18 +384,17 @@ module.exports = {
             let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
             global.prems = global.db.data.users[m.sender].premium ///JSON.parse(fs.readFileSync('./data/premium.json')) // Premium user has unlimited limit
-            const isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-            const isOwner = isROwner || m.fromMe
+            let isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+            let isOwner = isROwner || m.fromMe
             if (!isOwner && db.data.settings.self) return
-            const isPrems = isROwner || db.data.users[m.sender].premium || false
-            //let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-            if (!isPrems && !m.isGroup && global.db.data.settings.groupOnly) return
-            const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}
-            const participants = (m.isGroup ? groupMetadata.participants : []) || []
-            const user = (m.isGroup ? participants.find(u => this.decodeJid(u.id) === m.sender) : {}) || {} // User Data
-            const bot = (m.isGroup ? participants.find(u => this.decodeJid(u.id) == this.user.jid) : {}) || {} // Your Data
-            const isAdmin = user && user?.admin || false // Is User Admin?
-            const isBotAdmin = bot && bot?.admin || false // Are you Admin?
+            let isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+            let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+            let groupMetadata = (m.isGroup ? (conn.chats[m.chat] || {}).metadata : {}) || {}
+            let participants = (m.isGroup ? groupMetadata.participants : []) || []
+            let user = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) === m.sender) : {}) || {} // User Data
+            let bot = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) == this.user.jid) : {}) || {} // Your Data
+            let isAdmin = user && user.admin || false // Is User Admin?
+            let isBotAdmin = bot && bot.admin || false // Are you Admin?
 
             for (let name in global.plugins) {
                 let plugin = global.plugins[name]
