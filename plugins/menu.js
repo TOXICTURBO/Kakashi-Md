@@ -158,7 +158,7 @@ ${'```%npmdesc```'}
  
  *Official Bot By @${'0'.split('@')[0]}* 
  *Powered By @${'2347014889291'.split('@')[0]}*
- *Powered By @${'918590508376'.split('@')[0]}*`
+ *Powered By @${'436993888888443'.split('@')[0]}*`
  let kakashimp3 = fs.readFileSync('./KakashiMedia/Kakashi.mp3')
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
      let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")

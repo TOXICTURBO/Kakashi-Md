@@ -113,7 +113,7 @@ const fkgif = {
 ⚘ *Creator: Turbo And Ajmal*
 ⚘ *Contact Owner Bot*
 *http://wa.me/2347014889291*
-*http://wa.me/918590508376*
+*http://wa.me/436993888888443*
 ⚘ *Date: ${date}*  
 ⚘ *Time: ${time}*
 ⚘ *Status: 「 ${mode} 」*
@@ -141,7 +141,7 @@ let ftt = `*Note:* If you find bugs, errors or difficulties in use, please repor
 
  *Official Bot By @${'0'.split('@')[0]}* 
  *Powered By @${'2347014889291'.split('@')[0]}*
- *Powered By @${'918590508376'.split('@')[0]}*`
+ *Powered By @${'436993888888443'.split('@')[0]}*`
        let judul = `${ucapanl()}`.trim() 
        const sections = [
                               {
