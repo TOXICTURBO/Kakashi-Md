@@ -113,7 +113,7 @@ ${iron < 30 ? `\n⛓️Your iron is low *${30 - iron}*` : ''}${kayu < 20 ? `\n�
         conn.reply(m.chat, 'Error!!', m)
         if (DevMode) {
             let file = require.resolve(__filename)
-            for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) {
+            for (let jid of global.owner.map + '@s.whatsapp.net').filter(v => v != conn.user.jid)) {
                 conn.sendMessage(jid, file + ' error\nNo: *' + m.sender.split`@`[0] + '*\nCommand: *' + m.text + '*\n\n*' + e + '*')
             }
         }

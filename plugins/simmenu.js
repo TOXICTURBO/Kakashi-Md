@@ -359,7 +359,7 @@ let ftt = `*Note:* If you find bugs, errors or difficulties in use, please repor
            ] 
     const listMessage = {
       text: `Hi ${name} Choose the menu below, bro`.trim(),
-      footer: 'Tetap Follow Terus Bot Yah Kak >//<',
+      footer: 'Kakashi Md',
       title: judul,
       buttonText: "Choose Here",
       sections
