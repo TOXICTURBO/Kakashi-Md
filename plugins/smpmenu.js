@@ -289,7 +289,7 @@ ${'```%npmdesc```'}
          setTimeout(resolve, 1000) 
        }) * 1000 
      } 
-     let emot = conn.pickRandom(['❤️', '🔥', '🇮🇳'])
+     let emot = `${pickRandom(['❤️','🔥','🇮🇳','🐦','🐧','🦄'])}` 
      let menuvideo = fs.readFileSync('./KakashiMedia/menu.mp4')
      let muptime = clockString(_muptime) 
      let uptime = clockString(_uptime) 
