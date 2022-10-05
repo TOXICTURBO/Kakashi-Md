@@ -25,7 +25,7 @@ handler.all = async function (m) {
           mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}` 
          } 
       } 
-     })
+     }).
  ${user.banned ? 'you are banned' : `
 I Am Kakashi, Whatsapp Bot Which You Can Use To Make Stickers, Downloading Something, Playing Games, Etc.
 
