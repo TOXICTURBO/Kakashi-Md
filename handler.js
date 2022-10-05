@@ -385,7 +385,7 @@ module.exports = {
             let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
             global.prems = global.db.data.users[m.sender].premium ///JSON.parse(fs.readFileSync('./data/premium.json')) // Premium user has unlimited limit
-            const isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+            const isROwner = [global.conn.user.jid, ...global.owner] + '@s.whatsapp.net'.includes(m.sender)
             const isOwner = isROwner || m.fromMe
             if (!isOwner && db.data.settings.self) return
             const isMods = isOwner || process.env.MODS + '@s.whatsapp.net'.includes(m.sender)
