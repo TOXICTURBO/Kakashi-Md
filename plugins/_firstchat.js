@@ -11,7 +11,7 @@ handler.all = async function (m) {
     let user = global.db.data.users[m.sender]
     let name = conn.user.name
     let hao = `*Official Bot By @${'0'.split('@')[0]}* 
-*Powered By @${global.owner[1].split('@')[0]}*`
+*Powered By @${global.owner[0].split('@')[0]}*`
     if (new Date - user.pc < 86400000) return //
         await conn.send3ButtonLoc(m.chat, 'https://i.imgur.com/4rRZ4c7.jpeg', ` ${ucapan()}, @${m.sender.split`@`[0]}
  ${user.banned ? 'you are banned' : `
