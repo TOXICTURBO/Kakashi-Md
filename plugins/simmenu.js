@@ -8,7 +8,8 @@ let levelling = require('../lib/levelling')
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => { 
 	let hao = ` 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'2347014889291'.split('@')[0]}*` 
+ *Powered By @${'2347014889291'.split('@')[0]}*
+ *Powered By @${'918590508376'.split('@')[0]}*` 
   let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
@@ -139,7 +140,8 @@ const fkgif = {
 let ftt = `*Note:* If you find bugs, errors or difficulties in use, please report/ask the Owner
 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'2347014889291'.split('@')[0]}*`
+ *Powered By @${'2347014889291'.split('@')[0]}*
+ *Powered By @${'918590508376'.split('@')[0]}*`
        let judul = `${ucapanl()}`.trim() 
        const sections = [
                               {

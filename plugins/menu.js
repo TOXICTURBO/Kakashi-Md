@@ -157,8 +157,9 @@ ${'```%npmdesc```'}
            let hao = `▸ Ⓟ = for premium users.\n▸ Ⓛ = fitur berlimit.
  
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'2347014889291'.split('@')[0]}*`
- let kakashimp3 = fs.readFileSync('./KakashiMedia/kakashi.mp3')
+ *Powered By @${'2347014889291'.split('@')[0]}*
+ *Powered By @${'918590508376'.split('@')[0]}*`
+ let kakashimp3 = fs.readFileSync('./KakashiMedia/Kakashi.mp3')
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
      let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
      let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}')) 
@@ -399,12 +400,12 @@ return conn.send2ButtonLoc(m.chat, kaka, ori, `Note : If You Use Old Wa Or Mod A
       } 
      })*/
      //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m).catch(_ => conn.reply(m.chat, text.trim(), m))
-  conn.sendFile(m.chat, 'https://a.uguu.se/mtDljqSq.mp3', 'https://a.uguu.se/mtDljqSq.mp3', null, m, true, {
+  conn.sendFile(m.chat, 'kakashimp3', 'kakashimp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
      })
 } catch (e) { 
-     conn.reply(m.chat, 'Maaf, menu sedang error', m) 
+     conn.reply(m.chat, 'Sorry, the menu is in error', m) 
      throw e 
    } 
  } 
