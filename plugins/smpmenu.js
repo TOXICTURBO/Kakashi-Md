@@ -400,10 +400,6 @@ return conn.send2ButtonLoc(m.chat, kaka, ori, `Note : If You Use Old Wa Or Mod A
       } 
      })*/
      //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m).catch(_ => conn.reply(m.chat, text.trim(), m))
-  conn.sendFile(m.chat, 'kakashimp3', 'kakashimp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
-     })
 } catch (e) { 
      conn.reply(m.chat, 'Sorry, the menu is in error', m) 
      throw e 
