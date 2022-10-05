@@ -386,8 +386,7 @@ module.exports = {
             global.prems = global.db.data.users[m.sender].premium ///JSON.parse(fs.readFileSync('./data/premium.json')) // Premium user has unlimited limit
             const isROwner = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             const isOwner = isROwner || m.fromMe
-            if (!isOwner && db.data.settings.self) return // Saat mode self diaktifkan hanya owner yang dapat menggunakannya
-            const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+            if (!isOwner && db.data.settings.self) return
             const isPrems = isROwner || db.data.users[m.sender].premium || false
             //let isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
             if (!isPrems && !m.isGroup && global.db.data.settings.groupOnly) return
@@ -506,13 +505,11 @@ module.exports = {
                     if (xp > 200) m.reply('Ngecit -_-') // Hehehe
                     else m.exp += xp
                     if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                        this.sendButton(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, wm, 'Buy', '.buy', m)
-                        // this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
-                        continue // Limit habis
+                        this.sendButton(m.chat, `Your limit is up, please buy via *${usedPrefix}buy*`, wm, 'Buy', '.buy', m)
+                        continue
                     }
                     if (plugin.level > _user.level) {
-                        this.sendButton(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, wm, `Levelup`, `.levelup`, m)
-                        // this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
+                        this.sendButton(m.chat, `diperlukan level ${plugin.level} to use this command. Your level ${_user.level}`, wm, `Levelup`, `.levelup`, m)
                         continue // If the level has not been reached
                     }
                     let extra = {
