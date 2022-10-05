@@ -179,123 +179,123 @@ let ftt = `*Note:* If you find bugs, errors or difficulties in use, please repor
                   "rows": [{
                   "title": "「 💬 」› All Orders",
                   "description": "Show all the features of the bot",
-                  "rowId": ".? all"
+                  "rowId": "send? all"
                 }, {              
                   "title": "「 🎮 」› Game ",
                   "description": "Showing the features of the game",
-                  "rowId": ".? game"
+                  "rowId": "send? game"
                 }, {
                   "title": "「 🌱 」› Rpg ",
                   "description": "Showing the features of rpg ! ",
-                  "rowId": ".? rpg"
+                  "rowId": "send? rpg"
                 }, {
                   "title": "「 📈 」› Exp & Limit ",
                   "description": "Showing the features of xp",
-                  "rowId": ".? xp"
+                  "rowId": "send? xp"
                 }, {
                   "title": "「 🧩 」› Fun ",
                   "description": "Showing the features of fun",
-                  "rowId": ".? fun"
+                  "rowId": "send? fun"
                 }, {
                   "title": "「 🎁 」› Gift ",
                   "description": "Showing the features of the gift!",
-                  "rowId": ".? gift"
+                  "rowId": "send? gift"
                 }, {
                   "title": "「 🔞 」› Nsfw ",
                   "description": "Showing the features of nsfw",
-                  "rowId": ".? nsfw"
+                  "rowId": "send? nsfw"
                 }, {
                   "title": "「 ⛩️ 」› Anime ",
                   "description": "Featuring features from anime",
-                  "rowId": ".? anime"
+                  "rowId": "send? anime"
                 }, {
                   "title": "「 📰 」› News ",
                   "description": "Showing the features of the news",
-                  "rowId": ".? News"
+                  "rowId": "send? News"
                 }, {
                   "title": "「 📚 」› Education ",
                   "description": "Showing the features of education",
-                  "rowId": ".? education"
+                  "rowId": "send? education"
                 }, {
                   "title": "「 🖼️ 」› Random Pict ",
                   "description": "Show features from photos",
-                  "rowId": ".? image"
+                  "rowId": "send? image"
                 },  {
                   "title": "「 🎫 」› Sticker ",
                   "description": "Showing the features of the sticker",
-                  "rowId": ".? stiker"
+                  "rowId": "send? stiker"
                 }, {
                   "title": "「 🐚 」› Magic Shell",
                   "description": "Featuring the features of magic shells",
-                  "rowId": ".? kerangajaib"
+                  "rowId": "send? kerangajaib"
                 }, {
                   "title": "「 🎵 」› Sound Music ",
                   "description": "Featuring features of sound music",
-                  "rowId": ".? sound"
+                  "rowId": "send? sound"
                 }, { 
                   "title": "「 🎧 」› Random Vn",
                   "description": "Show features of rendom vn",
-                  "rowId": ".? vn"                                                      
+                  "rowId": "send? vn"                                                      
                 }, {
                   "title": "「 📑 」› Quotes ",
                   "description": "Showing the features of random text",
-                  "rowId": ".? quotes"
+                  "rowId": "send? quotes"
                 }, {
                   "title": "「 🏛️  」› Group Settings ",
                   "description": "Showing features from group settings",
-                  "rowId": ".? admin"
+                  "rowId": "send? admin"
                 }, {
                   "title": "「 👥 」› Group ",
                   "description": "Showing the features of the group",
-                  "rowId": ".? grup"
+                  "rowId": "send? grup"
                 }, {
                   "title": "「 🌟 」› Premium ",
                   "description": "Featuring features from premium",
-                  "rowId": ".? premium"
+                  "rowId": "send? premium"
                 }, {
                   "title": "「 💻 」› Internet ",
                   "description": "Showing the features of the internet",
-                  "rowId": ".? internet"
+                  "rowId": "send? internet"
                 }, {
                   "title": "「 🖊️ 」› Editz Menu ",
                   "description": "Showing the features of the logo",
-                  "rowId": ".? nulis"
+                  "rowId": "send? nulis"
                 }, {
                   "title": "「 📩 」› Downloader ",
                   "description": "Show features of download",
-                  "rowId": ".? downloader"
+                  "rowId": "send? downloader"
                 }, {
                   "title": "「 🎭 」›  Anonymous Chat",
                   "description": "Showing the features of anonymous chat",
-                  "rowId": ".? anonymous"  
+                  "rowId": "send? anonymous"  
                 }, {              	
                   "title": "「 🧰 」› Tools ",
                   "description": "Showing the features of the tools",
-                  "rowId": ".? tools"
+                  "rowId": "send? tools"
                 }, {
                   "title": "「 📂 」› Database ",
                   "description": "Showing the features of the database",
-                  "rowId": ".? database"
+                  "rowId": "send? database"
                 }, {
                   "title": "「 🗳️ 」› Vote ",
                   "description": "Showing the features of the vote",
-                  "rowId": ".? vote"
+                  "rowId": "send? vote"
                 }, {
                   "title": "「 🎙️ 」› Voice Changer ",
                   "description": "Showing features of voice changer ",
-                  "rowId": ".? audio"
+                  "rowId": "send? audio"
                 }, {
                   "title": "「 ℹ️ 」› Info ",
                   "description": "Show features from info",
-                  "rowId": ".? info"
+                  "rowId": "send? info"
                 }, {
                   "title": "「 ❓ 」› No Category ",
                   "description": "Showing features from no categories",
-                  "rowId": ".? tanpakategori"
+                  "rowId": "send? tanpakategori"
                 }, {
                   "title": "「 👩🏻‍💻 」› Owner ",
                   "description": "Showing the features of the owner",
-                  "rowId": ".? owner"
+                  "rowId": "send? owner"
                 }],
                                 "title": "▮Category 」"
                                 }, {
@@ -354,7 +354,7 @@ let ftt = `*Note:* If you find bugs, errors or difficulties in use, please repor
                   "rows": [{
                   "title": "🥇「 Contributor 」",
                   "description": "Thank you very much for the users who have participated",                  
-                  "rowId": ".? thnks"
+                  "rowId": "send? thnks"
                        }],
                                 "title": "▮Thanks To  」"
                             }
@@ -371,7 +371,7 @@ let ftt = `*Note:* If you find bugs, errors or difficulties in use, please repor
     return conn.sendMessage(m.chat, listMessage, { quoted: fkgif, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
     
     }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu', 'help', '?'] 
 handler.tags = ['main']
 handler.command = /^(m(enu)?|help|\?)$/i 
  handler.owner = false 
