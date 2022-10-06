@@ -4,9 +4,7 @@ let mime = m.quoted.mimetype || ''
 let media = await m.quoted.download()
 fs.writeFileSync(`./KakashiMedia/menu.mp4`, media)
 fs.writeFileSync(`./KakashiMedia/kakashi.mp4`, media)
-let send = `${global.wait}`
-}
-await conn.reply(m.chat, m, send)
+m.reply(`*Done ✔️*`)
 }
 handler.help = ['setvideo','setmenuvideo']
 handler.tags = ['owner']
