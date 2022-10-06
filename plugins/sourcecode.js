@@ -1,5 +1,5 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, 'https://i.imgur.com/c17uGDe.jpeg',
+let handler = async (m, { conn }) => conn.send3ButtonImg(m.chat, 'https://i.imgur.com/c17uGDe.jpeg',
 `Hi @${m.sender.split('@')[0]} 
 
 ◪ 📮 *SCRIPT BOT*
@@ -16,6 +16,6 @@ Official By @${'0'.split('@')[0]}
 Powered By @${`${global.owner[0]}`.split('@')[0]}`, 'Bot Owner', '#owner')
 handler.help = ['sourcecode']
 handler.tags = ['info']
-handler.command = /^(sourcecode|sc|scbot|script|github)$/i
+handler.command = /^(sourcecode|sc|git|script|github)$/i
 
 module.exports = handler
