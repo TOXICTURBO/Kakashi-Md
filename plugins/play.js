@@ -2,7 +2,7 @@ let yts = require('yt-search')
  let fetch = require('node-fetch') 
  const { servers, yta, ytv } = require('../lib/y2mate') 
  let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) => { 
-   if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} look at me` 
+   if (!text) throw `uhm.. look for what?\n\nexample:\n${usedPrefix + command} look at me` 
    let chat = global.db.data.chats[m.chat] 
    let results = await yts(text) 
    let vid = results.all.find(video => video.seconds < 3600) 

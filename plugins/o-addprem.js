@@ -5,14 +5,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let user = db.data.users[who]
     if (!who) throw `tag or reply to messages you want to make premium!`
     let txt = text.replace('@' + who.split`@`[0], '').trim()
-    if (!txt) throw `how many days mamaskuh?`
-    if (isNaN(txt)) return m.reply(`only mamaskuh number!\n\nexample:\n${usedPrefix + command} @${m.sender.split`@`[0]} 7`)
+    if (!txt) throw `how many days ?`
+    if (isNaN(txt)) return m.reply(`only number!\n\nexample:\n${usedPrefix + command} @${m.sender.split`@`[0]} 7`)
     var jumlahHari = 86400000 * txt
     var now = new Date() * 1
     if (now < user.premiumTime) user.premiumTime += jumlahHari
     else user.premiumTime = now + jumlahHari
     user.premium = true
-    m.reply(`Succeed!\n*${user.name}* now premium ${txt} hari.\n\ncountdown: ${conn.msToDate(user.premiumTime - now)}`)
+    m.reply(`Succeed!\n*${user.name}* now premium ${txt} day.\n\ncountdown: ${conn.msToDate(user.premiumTime - now)}`)
 }
 handler.help = ['addprem [@user] <hari>']
 handler.tags = ['owner']
