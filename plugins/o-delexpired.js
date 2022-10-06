@@ -25,6 +25,6 @@ function msToDate(ms) {
     let minutes = Math.floor((hoursms) / (60 * 1000));
     let minutesms = ms % (60 * 1000);
     let sec = Math.floor((minutesms) / (1000));
-    return days + " hari " + hours + " jam " + minutes + " menit";
+    return days + " day " + hours + " hours " + minutes + " minutes ";
     // +minutes+":"+sec;
 }
