@@ -6,7 +6,7 @@ fs.writeFileSync(`./KakashiMedia/kakashi.jpg`, media)
 fs.writeFileSync(`./KakashiMedia/logo.jpg`, media)
 fs.writeFileSync(`./src/logo.jpg`, media)
 fs.writeFileSync(`./thumbnail.jpg`, media)
-m.reply(`*Done ✔️*`, ftoko)
+m.reply(`*Done ✔️*`)
 }
 handler.help = ['setlogo','setthumb']
 handler.tags = ['owner']
