@@ -307,6 +307,22 @@ ${'```%npmdesc```'}
        } 
      }) 
      if (teks == '404') {
+ 	let date = d.toLocaleDateString(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
+    let dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    }).format(d)
+    let time = d.toLocaleTimeString(locale, {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
+    })
+ 	let mode = global.opts['self'] ? 'Private' : 'Public'
  	let kaka = `${pickRandom(['https://i.imgur.com/4rRZ4c7.jpeg', 'https://i.imgur.com/7c88Zco.jpeg', 'https://i.imgur.com/ihNQ9ky.jpeg', 'https://i.imgur.com/SKUjlZw.jpeg','https://i.imgur.com/imKhdgW.jpeg','https://i.imgur.com/c17uGDe.jpeg'])}` 
  	let ori = `
 ●────━───༺༻───━────●
