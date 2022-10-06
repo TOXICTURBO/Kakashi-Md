@@ -1,5 +1,6 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn }) => conn.send3ButtonImg(m.chat, 'https://i.imgur.com/c17uGDe.jpeg',
+let img = fs.readFileSync('./KakashiMedia/kakashi.jpg')
+let handler = async (m, { conn }) => conn.send3ButtonImg(m.chat, img,
 `Hi @${m.sender.split('@')[0]} 
 
 ◪ 📮 *SCRIPT BOT*
@@ -13,7 +14,7 @@ let handler = async (m, { conn }) => conn.send3ButtonImg(m.chat, 'https://i.imgu
 • Dont forget to give a star & give credit
 
 Official By @${'0'.split('@')[0]}
-Powered By @${`${global.owner[0]}`.split('@')[0]}`, 'Bot Owner', '#owner')
+Powered By @${`${global.owner[0]}`.split('@')[0]}`, 'Bot Owner', '#owner', 'Rules', '#rules' ,'Menu', '#menu', m)
 handler.help = ['sourcecode']
 handler.tags = ['info']
 handler.command = /^(sourcecode|sc|git|script|github)$/i
