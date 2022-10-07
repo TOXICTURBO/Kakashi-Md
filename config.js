@@ -9,6 +9,7 @@ global.APIs = { // API Prefix
   // name: 'https://website'
   turboapis: 'https://turboapis.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
+  maskser: 'https://api-mask-ser.herokuapp.com',
   bg: 'http://bochil.ddns.net',
   xteam: 'https://api.xteam.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',

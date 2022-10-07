@@ -629,26 +629,26 @@ module.exports = {
                 if (chat.welcome) {
                     let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                     for (let user of participants) {
-                        let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
+                        let pp1 = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
                         try {
-                            pp = await this.profilePictureUrl(user, 'image')
+                            pp1 = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
 
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-                            let wel = API('hardianto', '/api/welcome3', {
-                                profile: pp,
+                            let wel = API('maskser', '/api/maker/welcome1', {
+                                pp: pp1,
                                 name: await this.getName(user),
                                 bg: 'https://telegra.ph/file/a36809ab7862a77d18ac0.jpg',
-                                namegb: await this.getName(id),
+                                gpname: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
-                            let lea = API('hardianto', '/api/goodbye3', {
-                                profile: pp,
+                            let lea = API('maskser', '/api/maker/goodbye1', {
+                                pp: pp1,
                                 name: await this.getName(user),
                                 bg: 'https://telegra.ph/file/a36809ab7862a77d18ac0.jpg',
-                                namegb: await this.getName(id),
+                                gpname: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
                             /*await this.send3TemplateButtonImg(id, action === 'add' ? wel : lea, text, wm, action === 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'FokusID')*/
