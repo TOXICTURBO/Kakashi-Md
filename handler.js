@@ -655,7 +655,7 @@ module.exports = {
    await conn.sendButtonDoc(id, text, wm, action == 'add' ? 'welcome' : 'until found', action === 'add' ? '.intro' : 'Kakashi Md', fkontak,{
   contextInfo: {mentionedJid: [user],
     externalAdReply :{
-    mediaUrl: linkyt,
+    mediaUrl: linkig,
     mediaType: 2,
     description: deslink , 
     title: titlink,
