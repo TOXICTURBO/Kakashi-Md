@@ -661,7 +661,7 @@ module.exports = {
     title: titlink,
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
-    sourceUrl: linkgc
+    sourceUrl: linkig
      }}
   })
                         }
