@@ -21,10 +21,6 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       usedServer = server
       break
     } catch (e) {
-      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\ntry another server...'}`)
-    }
-  }
-
   if (yt === false) throw 'Server Error'
   if (yt2 === false) throw 'Server Error'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
