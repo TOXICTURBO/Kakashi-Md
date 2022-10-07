@@ -14,7 +14,7 @@ let ftrol = {
     surface : 1,
     message: `🇮🇳 Kakashi Whatsapp Md Bot`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await conn.resize(await (await fetch(fla + 'Setting')).buffer(), 300, 200), //Gambarnye
+    thumbnail: await conn.resize(await (await fetch(fla + 'Setting')).buffer(), 300, 200),
     sellerJid: '0@s.whatsapp.net' 
     }
     } 
@@ -309,7 +309,7 @@ const listMessage = {
 🎚️ *Options:* ${isEnable ? 'Enable' : 'Disable'}
 📣 *For:* ${isAll ? 'This Bot' : isUser ? '' : 'This Chats'}`, wm, `⋮☰ Menu`, '.menu', `${isEnable ? 'Off' : 'On'} ${type}`, `.${isEnable ? 'Off' : 'On'} ${type}` ,{ key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `Colour Your Life`, itemCount: 99999, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}}})
 }
-handler.help = ['on', 'off'].map(v => v + ' <option>')
+handler.help = ['on <option>', 'off <option>']
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 
