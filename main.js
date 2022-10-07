@@ -14,6 +14,7 @@ const _ = require('lodash')
 const syntaxerror = require('syntax-error')
 const P = require('pino')
 const os = require('os')
+const {MakeSession} =require ('./lib/session')
 let simple = require('./lib/simple')
 var low
 try {
@@ -67,9 +68,12 @@ loadDatabase()
 // if (opts['cluster']) {
 //   require('./lib/cluster').Cluster()
 // }
-global.authFile = `${opts._[0] || 'session'}.json`
+global.authFile ='./session.json' 
 global.isInit = !fs.existsSync(authFile)
 const { state, saveState } = useSingleFileAuthState(global.authFile)
+if(!fs.existsSync('./session.json')){
+MakeSession(global.session,authFile)
+}
 
 const connectionOptions = {
   printQRInTerminal: true,
