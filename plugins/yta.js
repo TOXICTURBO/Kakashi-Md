@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 const { servers, yta } = require('../lib/y2mate')
-let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
+let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args || !args[0]) throw `Exmple:\n${usedPrefix + command} url`
   let chat = global.db.data.chats[m.chat]
   let server = (args[1] || servers[0]).toLowerCase()

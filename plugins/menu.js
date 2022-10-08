@@ -407,7 +407,8 @@ return conn.send2ButtonVid(m.chat, menuvideo, ori, ` *I Am Kakashi The Copy Ninj
              description: `Turbo X Ajmal`, 
              mediaType: 2, 
            thumbnail: await genProfile(conn, m),
-          mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}` 
+          mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`,
+          sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`
          } 
       } 
      })
