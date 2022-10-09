@@ -38,7 +38,7 @@ ptt: true, contextInfo: { forwardingScore: 999, isForwarded: true,
              description: '',  
              mediaType: 2, 
            thumbnail: await (await fetch(fla + 'Broadcast')).buffer(), 
-          mediaUrl: `https://instagram.com/` 
+          mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`
          } 
       } 
    })
