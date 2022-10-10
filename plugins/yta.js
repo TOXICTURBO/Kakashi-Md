@@ -85,8 +85,6 @@ await conn.sendFile(m.chat, url, 0, {mimetype: 'audio/mpeg' ,fileName: `${title.
   conn.reply(m.chat,`${e}`)
   conn.reply('916380260672@s.whatsapp.net',`𝗨𝗵𝗼𝗵! 𝗮𝗻 𝗲𝗿𝗿𝗼𝗿 𝗢𝗰𝗰𝘂𝗿𝗲𝗱 
 
-𝗘𝗿𝗿𝗼𝗿 : ${util.format(e)}
-
   𝗖𝗼𝗺𝗺𝗮𝗻𝗱 : ${usedPrefix+command}
   
   𝗣𝗼𝘀𝘀𝗶𝗯𝗹𝗲 𝗥𝗲𝗮𝘀𝗼𝗻𝘀 :
