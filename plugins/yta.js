@@ -1,27 +1,17 @@
 let fetch = require('node-fetch')
-const { servers, yta } = require('../lib/y2mate')
+const { yta } = require('../lib/y2mate')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args || !args[0]) throw `Exmple:\n${usedPrefix + command} url`
-  let chat = global.db.data.chats[m.chat]
-  let server = (args[1] || servers[0]).toLowerCase()
-  let { dl_link, thumb, title, filesize, filesizeF } = await yta(args[0], servers.includes(server) ? server : servers[0])
-  conn.sendFile(m.chat, dl_link, title + '.mp3', `
-┏┉━━━━━━━━━━━❏
-┆ *YOUTUBE MP3*
-├┈┈┈┈┈┈┈┈┈┈┈
-┆• *Title:* ${title}
-│• *Type:* MP3
-┆• *📥 File Size:* ${filesizeF}
-└❏
-`.trim(), m, null, {
-    asDocument: chat.useDocument, mimetype: 'audio/mp4', ptt: false, contextInfo: {
-        externalAdReply: {
-            title: `${title}`, 
-            body: 'Now Playing...',
-            description: 'Now Playing...',
-            mediaType: 2,
-          thumbnail: await (await fetch(thumb)).buffer(),
-         mediaUrl: `https://instagram/toxic_turbo777`
+  let quality = args[1] ? args[1] : '128kbps'
+  let media = await yta(text, quality)
+  buf = await getBuffer(media.thumb)
+  conn.sendMessage(m.chat, {audio:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
+                title:media.title,
+                body:"Kakashi Md",
+                mediaType:2,
+                thumbnail:buf,
+                mediaUrl:`${text}`, 
+                sourceUrl: `https://youtu.be/` }}}, {quoted:m})
         }
      }
   })
