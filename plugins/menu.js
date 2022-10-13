@@ -398,20 +398,18 @@ return conn.send2ButtonVid(m.chat, menuvideo, ori, ` *I Am Kakashi The Copy Ninj
      text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name]) 
      //await conn.reply(m.chat, '*L o a d i n g . . .*', fload) 
  
-   await conn.send2ButtonVid(m.chat, menuvideo, text.trim(), hao, 'Owner', '.owner', 'Rules', '.rules', m, { 
-     quoted: ftoko, 
-     contextInfo: { forwardingScore: 99999, isForwarded: true, 
-         externalAdReply: { 
-             title: 'Kakashi Whatsapp Md Bot', 
-             body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, 
-             description: `Turbo X Ajmal`, 
-             mediaType: 2, 
-           thumbnail: await genProfile(conn, m),
-          mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`,
-          sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`
-         } 
-      } 
-     })
+   conn.relayMessage(m.chat,  {
+    requestPaymentMessage: {
+      currencyCodeIso4217: 'USD',
+      amount1000: 50000000,
+      requestFrom: m.sender,
+      noteMessage: {
+      extendedTextMessage: {
+      text: text.trim(),
+      contextInfo: {
+      externalAdReply: {
+      showAdAttribution: true
+      }}}}}}, {})
 //await conn.send3ButtonLoc(m.chat, await conn.resize(await (await fetch('https://api.xteam.xyz/textpro/glitch?text=' + teks + '&text2=Kakashi%20Md%20BY%20Turbo%20And%20Ajmal&APIKEY=bf8ff984af1506b7')).buffer(), 300, 200), '◈┈┉────[ *DASHBOARD* ]────┉┈◈' , text.trim(), 'Owner', '.owner', 'Donasi', '.donasi', 'Rules', '.rules', m)
 //await conn.send2ButtonLoc(m.chat, await conn.resize(await (await fetch(flu + teks)).buffer(), 300, 200), text.trim(), `Active During : ${uptime}\n${week} ${date}\n${dateIslamic}`, 'Owner', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
 //await conn.send2ButtonImg(m.chat, await (await fetch(`${logos()}`)).buffer(), '──────────[ *DASHBOARD* ]──────────', text, 'OWNER', '.owner', '\n\nI Am Kakashi The Copy Ninja I Know A 1000 Jutsu I Am Going To Use Them All꒪꒳꒪', 'a', fkon, { contextInfo: { forwardingScore: 999, isForwarded: true}})
@@ -431,7 +429,7 @@ return conn.send2ButtonVid(m.chat, menuvideo, ori, ` *I Am Kakashi The Copy Ninj
      //conn.sendFile(m.chat, pp, menuvideo, text.trim(), m).catch(_ => conn.reply(m.chat, text.trim(), m))
 conn.sendFile(m.chat, kakashimp3, null, null, m, true, {
 type: 'audioMessage', 
-ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
+ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`, sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
      })
 } catch (e) { 
      conn.reply(m.chat, 'Sorry, the menu is in error', m) 
