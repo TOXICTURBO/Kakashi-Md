@@ -5,7 +5,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   let chat = global.db.data.chats[m.chat]
   let server = (args[1] || servers[0]).toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF } = await yta(args[0], servers.includes(server) ? server : servers[0])
-  conn.sendMessage(m.chat, { document: { url: dl_link }, mimetype: 'audio/mp4', fileName: title + `.mp3`, contextInfo: {
+  m.reply(wait)
+  await conn.sendMessage(m.chat, { document: { url: dl_link }, mimetype: 'audio/mpeg', fileName: title + `.mp3`}, {quoted: m})
+  conn.sendMessage(m.chat, { audio: { url: dl_link }, mimetype: 'audio/mpeg', fileName: title + `.mp3`, contextInfo: {
         externalAdReply: {
             title: `${title}`, 
             body: 'Now Playing...',
@@ -13,12 +15,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             mediaType: 2,
           thumbnail: await (await fetch(thumb)).buffer(),
          mediaUrl: `https://instagram/toxic_turbo777`
+         sourceUrl: `https://instagram/toxic_turbo777`
         }
      }
   })
 }
-handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url>`)
+handler.help = ['ytmp3', 'yta', 'song']
 handler.tags = ['downloader']
-handler.command = /^yt(a|mp3)$/i
+handler.command = /^(yta|ytmp3|song)$/i
 
 module.exports = handler

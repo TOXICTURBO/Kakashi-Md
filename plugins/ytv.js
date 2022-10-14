@@ -14,8 +14,8 @@ let handler = async(m, { conn, args, isPrems, isOwner }) => {
 *Filesize:* ${filesizeF}
 `.trim(), m, false, { thumbnail: Buffer.alloc(0), mimetype: 'video/mp4' })
 }
-handler.help = ['ytmp4 <query>']
+handler.help = ['ytmp4', 'ytv', 'video']
 handler.tags = ['downloader']
-handler.command = /^yt(v(idi?e?o)?|mp4)?$/i
+handler.command = /^(ytv|ytmp4|video)$/i
 
 module.exports = handler
