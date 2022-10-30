@@ -22,7 +22,7 @@ let handler = async (m, { conn, args }) => {
   let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 5)) : Math.min(30, sortedExp.length)
     let text = ` *Level Leaderboard Top ${len}*
     
-You: *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
+You: *${userslevel.indexOf(m.sender) + 1}* from *${userslevel.length}*
 
  ${sortedlevel.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.split`@`[0] + ': *' + data.level + ' Lvl*').join`\n `}
 
@@ -31,7 +31,7 @@ You: *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
 You: *${usersmoney.indexOf(m.sender) + 1}* dari *${usersmoney.length}*
 
 ➷ ${sortedmoney.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.split`@`[0] + ': *' + data.money + ' Money*').join`\n➷ `}`.trim()
-  await conn.send2ButtonLoc(m.chat, 'https://telegra.ph/file/b85bb5e3bbda437af0e03.jpg', text, `Aktif Selama : ${uptime}\n${week} ${date}`, '💌 My', '.my', '📑 PROFILE', '.profile', m)
+  await conn.send2ButtonLoc(m.chat, 'https://telegra.ph/file/b85bb5e3bbda437af0e03.jpg', text, `: ${uptime}\n${week} ${date}`, '💌 My', '.my', '📑 PROFILE', '.profile', m)
 }
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)

@@ -31,7 +31,7 @@ let handler = m => m
                          { 
                                  let tag = `@${m.sender.replace(/@.+/, '')}` 
                                  let mentionedJid = [m.sender] 
-                                         await this.sendButtonLoc(m.chat, await (await fetch('https://telegra.ph/file/8dfcf533fd8e65e3dfcbd.jpg')).buffer(), `╭─「 Level Up 」\n│ • Name: *${conn.getName(m.sender)}*\n│ • Tag: *${tag}*\n│ • Role: *${role}*\n│ • Exp: *${exp} Xp*\n│ • Previous levels: *${before}*\n│ • Current level: *${user.level}*\n╰───────࿐`.trim(), wm, 'PROFILE', '.profile', m, { contextInfo: { mentionedJid }}) 
+                                         await this.sendButtonLoc(m.chat, await (await fetch('https://api.xteam.xyz/textpro/glitch?text=%27%20+%20Level%20Up%20+%20%27&text2=Congratulation%20You%20Got%20A%20New%20Level&APIKEY=bf8ff984af1506b7')).buffer(), `╭─「 Level Up 」\n│ • Name: *${conn.getName(m.sender)}*\n│ • Tag: *${tag}*\n│ • Role: *${role}*\n│ • Exp: *${exp} Xp*\n│ • Previous levels: *${before}*\n│ • Current level: *${user.level}*\n╰───────࿐`.trim(), wm, 'PROFILE', '.profile', m, { contextInfo: { mentionedJid }}) 
                                  } 
                  } 
          } 
