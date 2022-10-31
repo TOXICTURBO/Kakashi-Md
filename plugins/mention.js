@@ -1,8 +1,8 @@
 let handler = m => m
 handler.all = async function (m, { conn}) {
-    let sound = [fs.readFileSync('./KakashiMedia/kakashi.mp3'),
-                         fs.readFileSync('./KakashiMedia/kakashi.mp3'),
-                         fs.readFileSync('./KakashiMedia/kakashi.mp3')]
+    let sound = [fs.readFileSync('./KakashiMedia/Kakashi.mp3'),
+                         fs.readFileSync('./KakashiMedia/Kakashi.mp3'),
+                         fs.readFileSync('./KakashiMedia/Kakashi.mp3')]
   let audio = pickRandom(sound)
 
   for (let i of global.tagowner)
