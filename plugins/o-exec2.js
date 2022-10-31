@@ -23,8 +23,8 @@ m.reply(serr)
 }
 
 handler.help = ['$']
-handler.tags = ['advanced']
+handler.tags = ['owner']
 handler.customPrefix = /^[$]/
-handler.command = new RegExp
 handler.rowner = true
+handler.owner = true
 module.exports = handler
