@@ -1,6 +1,7 @@
 let fs = require('fs')
 global.botnamecon = process.env.BOT_NAME
 global.owner = process.env.OWNER // Put your number to /src/owner.json
+global.tagowner = process.env.TAG_OWNER // Put your number
 global.mods = process.env.MODS // Want some help?
 global.thumbt = fs.readFileSync('./KakashiMedia/kakashi.jpg')
 global.fsx = 999999999999
