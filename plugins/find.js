@@ -17,6 +17,7 @@ let handler = async (m,{usedPrefix,command,}) => {
 		let { code, msg } = res.status
 		if (code !== 0) throw msg
 		let { title, artists, album, genres, release_date } = res.metadata.music[0]
+		let turbowm =`${global.WM}`
 		let txt = `
 *• Title:* ${title}
 *• Artist:* ${artists !== undefined ? artists.map(v => v.name).join(', ') : ''}
@@ -25,11 +26,11 @@ let handler = async (m,{usedPrefix,command,}) => {
 *• Release Date:* ${release_date}
 `.trim()
 		fs.unlinkSync(`./tmp/${m.sender}.${ext}`)
-		await conn.reply(m.chat,txt)
+		await conn.send3Button(m.chat,txt,turbowm,'PLAY IT HERE', `.song ${title}`,'MENU', '.menu','OWNER', '.owner', ftroli)
 	} else throw 'Reply audio/video!'
 }catch(e){
     conn.reply(m.chat,`${e}`)
-  conn.reply('916380260672@s.whatsapp.net',`𝗨𝗵𝗼𝗵! 𝗮𝗻 𝗲𝗿𝗿𝗼𝗿 𝗢𝗰𝗰𝘂𝗿𝗲𝗱 
+  conn.reply('0@s.whatsapp.net',`𝗨𝗵𝗼𝗵! 𝗮𝗻 𝗲𝗿𝗿𝗼𝗿 𝗢𝗰𝗰𝘂𝗿𝗲𝗱 
   
   𝗖𝗼𝗺𝗺𝗮𝗻𝗱 : ${usedPrefix+command}
   
