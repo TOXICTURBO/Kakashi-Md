@@ -61,6 +61,46 @@ handler.all = async function (m) {
 	 { remoteJid: "status@broadcast" } : {}) },
 	 message: { "liveLocationMessage": { "title": "Turbo And Ajmal","h": wm, 'jpegThumbnail': fs.readFileSync('./KakashiMedia/kakashi.jpg')}}
 	}
+	
+	global.adReply = {
+			contextInfo: {
+				forwardingScore: 9999,
+				//isForwarded: true, // This is so that the writing is continued many times, if you want to remove it, change true to false
+				externalAdReply: { // This part is for you to be creative :'v
+                    showAdAttribution: true,
+					title: global.titlink,
+					body: global.bodlink,
+					mediaUrl: global.linkig,
+					description: global.WM,
+					previewType: "PHOTO",
+					thumbnail: fs.readFileSync('./KakashiMedia/kakashi.jpg'),
+					sourceUrl: "https://github.com/TURBOHYPER",					
+				}
+			}
+		}
+		
+		global.fakeig = {
+         contextInfo: { externalAdReply: { showAdAttribution: true,
+            mediaUrl: global.linkig,
+            mediaType: "VIDEO",
+            description: global.WM, 
+            title: global.titlink,
+            body: global.bodlink,
+            thumbnailUrl: fs.readFileSync('./KakashiMedia/kakashi.jpg'),
+            sourceUrl: global.linkig
+    }
+    } }
+global.fakefb = {
+         contextInfo: { externalAdReply: { showAdAttribution: true,
+            mediaUrl: "https://Facebook.com/",
+            mediaType: "VIDEO",
+            description: "https://www.Facebook.com/", 
+            title: global.titlink,
+            body: global.bodlink,
+            thumbnailUrl: fs.readFileSync('./KakashiMedia/kakashi.jpg'),
+            sourceUrl: global.linkig
+    }
+    } }
         
             global.ftoko = {
 key: {
@@ -146,7 +186,7 @@ key: {
        
         global.fake = pickRandom(global.fak)
         
-        global.fak = [ fvn, fgif, ftroli, fgclink, fliveLoc, fliveLoc2, fdocs, ftoko, ftextt, fkontak ]
+        global.fak = [ fvn, fgif, ftroli, fgclink, fliveLoc, fliveLoc2, fdocs, ftoko, ftextt, fkontak, fakeig, fakefb, adReply ]
 		// Add it
 	}
 }

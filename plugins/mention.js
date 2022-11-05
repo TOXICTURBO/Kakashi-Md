@@ -20,7 +20,7 @@ handler.all = async function (m, { conn}) {
 
   for (let i of global.tagowner)
     if (m.text.includes('@'+i)){
-        await conn.sendFile(m.chat,audio, 'file.mp4', '', m, 1, { mimetype: 'audio/mp4' }, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, mediaUrl: `https://instagram.com/`, sourceUrl: `https://instagram.com/`])}`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} )
+        await this.sendFile(m.chat,audio, 'file.mp4', '', m, 1, { mimetype: 'audio/mp4' })
     }
 
 }
