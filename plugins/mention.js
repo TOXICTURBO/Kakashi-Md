@@ -1,7 +1,6 @@
 let handler = m => m
 handler.all = async function (m, { conn}) {
     let sound = [fs.readFileSync('./KakashiMedia/Kakashi.mp3'),
-                         fs.readFileSync('./KakashiMedia/mask1.mp3'),
                          fs.readFileSync('./KakashiMedia/mask2.mp3'),
                          fs.readFileSync('./KakashiMedia/mask3.mp3'),
                          fs.readFileSync('./KakashiMedia/mask4.mp3'),
