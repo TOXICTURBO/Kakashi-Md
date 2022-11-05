@@ -3,9 +3,8 @@ let handler = async (m, { conn, text }) => {
 	if (new Date() * 1 - setting.status > 1000) {
 		let _uptime = process.uptime() * 1000
 		let uptime = clockString(_uptime);
-		let bio = `I Am ${global.botnamecon} 🤖 || ⏰ Active During ${uptime} || 🌎 Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Group Only' : 'Public'} || 🎨 Create By ${global.WM}`)
-		await conn.updateProfileStatus(bio).catch(_ => _)
-		conn.reply(m.chat, 'Success in Changing Bio Bot', m)
+		let bio = `I Am ${global.botnamecon} 🤖 || ⏰ Active During ${uptime} || 🌎 Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Group Only' : 'Public'} || 🎨 Create By ${global.WM}`
+		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
 	}
 }
