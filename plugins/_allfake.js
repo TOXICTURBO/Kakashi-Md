@@ -62,6 +62,33 @@ handler.all = async function (m) {
 	 message: { "liveLocationMessage": { "title": "Turbo And Ajmal","h": wm, 'jpegThumbnail': fs.readFileSync('./KakashiMedia/kakashi.jpg')}}
 	}
 	
+	global.fpayment = {
+				"key": {
+					"remoteJid": "0@s.whatsapp.net",
+					"fromMe": false,
+					"id": "BAE595C600522C9C",
+					"participant": "0@s.whatsapp.net"
+				},
+				"message": {
+					"requestPaymentMessage": {
+						"currencyCodeIso4217": global.WM,
+						"amount1000": global.fsx,
+						"requestFrom": "0@s.whatsapp.net",
+						"noteMessage": {
+							"extendedTextMessage": {
+								"text": "Hai Bro"
+							}
+						},
+						"expiryTimestamp": global.fsx,
+						"amount": {
+							"value": global.fsx,
+							"offset": global.fsx,
+							"currencyCode": global.WM
+						}
+					}
+				}
+			}
+	
 	global.adReply = {
 			contextInfo: {
 				forwardingScore: 9999,
@@ -186,7 +213,7 @@ key: {
        
         global.fake = pickRandom(global.fak)
         
-        global.fak = [ fvn, fgif, ftroli, fgclink, fliveLoc, fliveLoc2, fdocs, ftoko, ftextt, fkontak, fakeig, fakefb, adReply ]
+        global.fak = [ fvn, fgif, ftroli, fgclink, fliveLoc, fliveLoc2, fdocs, ftoko, ftextt, fkontak, fakeig, fakefb, adReply, fpayment ]
 		// Add it
 	}
 }

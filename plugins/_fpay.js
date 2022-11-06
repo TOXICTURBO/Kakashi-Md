@@ -5,7 +5,7 @@ let handler  = async (m, { conn }) => {
   requestFrom: '0@s.whatsapp.net',
   expiryTimestamp: 8600,
   amount: 10000,
-  background: global.thumbt
+  background: global.fsx
 }}}}, {})
 }
 

@@ -1,4 +1,5 @@
 let handler = m => m
+let i = `${global.tagowner}`
 handler.all = async function (m, { conn}) {
     let sound = [fs.readFileSync('./KakashiMedia/Kakashi.mp3'),
                          fs.readFileSync('./KakashiMedia/mask2.mp3'),
@@ -17,9 +18,8 @@ handler.all = async function (m, { conn}) {
                          fs.readFileSync('./KakashiMedia/mask20.mp3')]
   let audio = pickRandom(sound)
 
-  for (let i of global.tagowner)
-    if (m.text.includes('@'+i)){
-        await this.sendFile(m.chat,audio, 'file.mp4', '', m, 1, { mimetype: 'audio/mp4' })
+    if (m.text.includes('@'+`${global.tagowner}`)){
+        await this.sendFile(m.chat,audio, 'file.mp4', '', global.fpayment, 1, { mimetype: 'audio/mp4' })
     }
 
 }
