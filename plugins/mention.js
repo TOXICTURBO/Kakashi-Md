@@ -19,7 +19,7 @@ handler.all = async function (m, { conn}) {
   let audio = pickRandom(sound)
 
     if (m.text.includes('@'+`${global.tagowner}`)){
-        await this.sendFile(m.chat,audio, 'file.mp4', '', global.fpayment, 1, { mimetype: 'audio/mp4' })
+        await this.sendFile(m.chat,audio, 'file.mp4', '', m, 1, { mimetype: 'audio/mp4' }, global.fpayment)
     }
 
 }
