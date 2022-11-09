@@ -19,7 +19,10 @@ handler.all = async function (m, { conn}) {
   let audio = pickRandom(sound)
 
     if (m.text.includes('@'+`${global.tagowner}`)){
-        await this.sendFile(m.chat,audio, 'file.mp4', '', m, 1, { mimetype: 'audio/mp4' }, global.fpayment)
+        await this.sendFile(m.chat, audio, null, null, m, 1, {
+type: 'audioMessage', 
+ptt: true, contextInfo:{ externalAdReply: { title: `Kakashi Whatsapp Md Bot`, body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, mediaUrl: `${global.linkig}`, sourceUrl: `${global.linkig}`, thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
+     })
     }
 
 }
