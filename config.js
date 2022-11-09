@@ -20,19 +20,21 @@ global.APIs = { // API Prefix
   neoxr: 'https://api.neoxr.eu.org',
   amel: 'https://melcanz.com',
   hardianto: 'https://hardianto.xyz',
+  violetics : 'https://violetics.pw',
   lol: 'https://api.lolhuman.xyz'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://turboapis.herokuapp.com': 'TurboMods',
-  'https://api.neoxr.eu.org': 'yntkts',
+  'https://api.neoxr.eu.org': 'eF6MUU',
   'https://api.xteam.xyz': 'Apikeys',
   'https://melcanz.com': 'Apikeys',
-  'https://api.lolhuman.xyz': 'Apikeys',
+  'https://api.lolhuman.xyz': '5e0b5cf41125348368c4f017',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://hardianto.xyz': 'hardianto',
+  'https://violetics.pw': 'beta',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
