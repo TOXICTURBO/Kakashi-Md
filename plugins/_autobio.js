@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text }) => {
+handler.before = async function (m)
 	let setting = global.db.data.settings[conn.user.jid]
 	if (new Date() * 1 - setting.status > 1000) {
 		let _uptime = process.uptime() * 1000
