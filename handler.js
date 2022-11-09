@@ -634,11 +634,6 @@ module.exports = {
                             pp1 = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
                         	
-                        let gp1 = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
-                        try {
-                            gp1 = await this.profilePictureUrl(id, 'image')
-                        } catch (e) {
-
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace(/@user/g, '@' + user.split`@`[0])
@@ -647,7 +642,7 @@ module.exports = {
                                 username: await this.getName(user),
                                 background: 'https://telegra.ph/file/a36809ab7862a77d18ac0.jpg',
                                 groupname: await this.getName(id),
-                                img2: gp1,
+                                img2: await this.profilePictureUrl(id, 'image'),
                                 member: groupMetadata.participants.length
                             })
                             let lea = API('lol', '/api/base/welcome', {
@@ -655,7 +650,7 @@ module.exports = {
                                 username: await this.getName(user),
                                 background: 'https://telegra.ph/file/a36809ab7862a77d18ac0.jpg',
                                 groupname: await this.getName(id),
-                                img2: gp1,
+                                img2: await this.profilePictureUrl(id, 'image'),
                                 member: groupMetadata.participants.length
                             })
                             /*await this.send3TemplateButtonImg(id, action === 'add' ? wel : lea, text, wm, action === 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'FokusID')*/
