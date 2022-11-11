@@ -11,13 +11,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     var now = new Date() * 1
     if (now < user.premiumTime) user.premiumTime += jumlahHari
     else user.premiumTime = now + jumlahHari
-    user.premium = true
+    user.premium = false
     m.reply(`Succeed!\n*${user.name}* now premium ${txt} day.\n\ncountdown: ${conn.msToDate(user.premiumTime - now)}`)
 }
-handler.help = ['addprem [@user] <hari>']
+handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
 handler.command = /^(add|tambah|\+)p(rem)?$/i
 
 handler.rowner = true
+handler.owner = true
 
 module.exports = handler
