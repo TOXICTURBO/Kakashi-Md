@@ -157,7 +157,7 @@ ${'```%npmdesc```'}
            let hao = `▸ Ⓟ = for premium users.\n▸ Ⓛ = fitur berlimit.
  
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'2347014889291'.split('@')[0]}*
+ *Powered By @${'2347086086722'.split('@')[0]}*
  *Powered By @${'436993888888443'.split('@')[0]}*`
  let kakashimp3 = fs.readFileSync('./KakashiMedia/Kakashi.mp3')
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -330,7 +330,7 @@ ${'```%npmdesc```'}
 ⚘ *Bot Name: Kakashi Md*
 ⚘ *Creator: Turbo And Ajmal*
 ⚘ *Contact Owner Bot*
-*http://wa.me/2347014889291*
+*http://wa.me/2347086086722*
 *http://wa.me/436993888888443*
 ⚘ *Date: ${date}*  
 ⚘ *Time: ${time}*
