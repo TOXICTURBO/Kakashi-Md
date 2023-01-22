@@ -3,6 +3,9 @@ let cluster = require('cluster')
 let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 8000;
 const CFonts = require('cfonts')
 const Readline = require('readline')
 const yargs = require('yargs/yargs')
@@ -24,6 +27,10 @@ var isRunning = false
  * Start a js file
  * @param {String} file `path/to/file`
  */
+ function Turbo() {
+  console.log("Syncing Database");
+  await config.DATABASE.sync();
+
 function start(file) {
   if (isRunning) return
   isRunning = true
@@ -67,5 +74,12 @@ function start(file) {
     })
   // console.log(p)
 }
-
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+app.listen(port, () => console.log(`app listening on port http://localhost:${port}`));
+setTimeout(() => {
+  Turbo();
+}, 3000);
+}
 start('main.js')
