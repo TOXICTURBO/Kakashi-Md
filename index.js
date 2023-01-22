@@ -27,9 +27,9 @@ var isRunning = false
  * Start a js file
  * @param {String} file `path/to/file`
  */
- function Turbo() {
+ async function Turbo() {
   console.log("Syncing Database");
-  await config.DATABASE.sync();
+  await global.DATABASE.sync();
 
 function start(file) {
   if (isRunning) return
