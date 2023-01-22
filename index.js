@@ -74,6 +74,8 @@ function start(file) {
     })
   // console.log(p)
 }
+start('main.js')
+}
 app.get("/", (req, res) => {
   res.send("hello world");
 });
@@ -81,5 +83,3 @@ app.listen(port, () => console.log(`app listening on port http://localhost:${por
 setTimeout(() => {
   Turbo();
 }, 3000);
-}
-start('main.js')
