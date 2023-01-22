@@ -1,4 +1,5 @@
 let fs = require('fs')
+const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : process.env.DATABASE_URL
 global.botnamecon = process.env.BOT_NAME
 global.owner = process.env.OWNER // Put your number to /src/owner.json
 global.tagowner = process.env.TAG_OWNER // Put your number
@@ -90,6 +91,7 @@ global.fs = require('fs')
 global.data = JSON.parse(fs.readFileSync('./data.json'))
 global.fetch = require('node-fetch')
 global.bochil = require('@bochilteam/scraper')
+DATABASE: DATABASE_URL === './database.db' ? new Sequelize({ dialect: 'sqlite', storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: 'postgres', ssl: true, protocol: 'postgres', dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false })
 
 global.rpg = {
   emoticon(string) {
