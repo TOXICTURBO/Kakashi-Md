@@ -14,7 +14,7 @@ let handler = async (m, { conn, text }) => {
     status: 404,
     surface : 404,
     message: `© Kakashi Md\nFrom ${conn.getName(m.sender)} 🌠`, 
-    orderTitle: `▮By Turbo And Ajmal ▸`,
+    orderTitle: `▮By Turbo Mods ▸`,
     thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),
     }
     }
