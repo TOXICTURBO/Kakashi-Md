@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => conn.send3ButtonImg(m.chat, img,
 │ *Script :* 
 │ ╰ https://github.com/TURBOHYPER/Kakashi-Md
 │ *Base :* 
-│ ╰ https://github.com/Ajmal-Achu/Wizard-Ser
+│ ╰ https://github.com/TURBOHYPER/Toxic-Alexa
 ╰──────────═┅═──────────
 `,`📍 *N o t e :* 
 • Dont forget to ask the owners permission before using the script bro!
