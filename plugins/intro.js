@@ -7,7 +7,7 @@ m.reply(`
 │ 
 │ Hey Its Me Kakashi
 │ I Am A Whatsapp Md Bot
-│ Made By Turbo And Ajmal
+│ I Am Made By Turbo Mods
 │ I Am A Plugin WhatsApp Bot
 │ I Am A Md Whatsapp Bot
 │ I Am Based On Phoenix Bot
