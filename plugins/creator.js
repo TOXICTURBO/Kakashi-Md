@@ -33,7 +33,7 @@ let handler = async(m, { conn }) => {
         externalAdReply: { //showAdAttribution: true,
         	sourceUrl: 'https://instagram.com/',
             title: 'Kakashi Md <3',
-            body: 'Turbo X Ajmal',
+            body: 'Turbo Mods',
           thumbnail: await (await fetch(pp)).buffer()
         }
      }
