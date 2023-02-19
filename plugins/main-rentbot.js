@@ -11,7 +11,6 @@ let handler = async (m, { conn }) => {
 ├ Want To Add Kakashi Md To Your Group?
 ├ Contact Owner To Add In Your Group
 ├ Developer: wa.me/916380260672
-├ Developer: wa.me/918590508376
 │
 └────
 `.trim(),
@@ -33,7 +32,7 @@ let handler = async (m, { conn }) => {
             },
             "businessOwnerJid": "918270026275@s.whatsapp.net"
         },
-        "footerText": "Developer: wa.me/916380260672\n\nDeveloper: wa.me/918590508376"
+        "footerText": "Developer: wa.me/916380260672"
     }
     conn.sendMessage(m.chat, listMessage, 'listMessage', { quoted: m, contextInfo: { mentionedJid: conn.parseMention(listMessage.description) } })
 }
