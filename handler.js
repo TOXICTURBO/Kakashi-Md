@@ -35,11 +35,11 @@ module.exports = {
         global.author = 'Made By Turbo And Ajmal'
         global.packname2 = 'Made With'
         global.author2 = 'Kakashi Md By Turbo & Ajmal'
-        global.wm3 = 'Kakashi Whatapp Md Made By Turbo & Ajmal'
-        global.wm2 = 'Kakashi Md' + ' ' + 'By Turbo And Ajmal'
+        global.wm3 = 'Kakashi Whatapp Md Made By Turbo'
+        global.wm2 = 'Kakashi Md' + ' ' + 'By Turbo'
         global.wm = 'Kakashi Md'
         global.colong1 = 'Kakashi Md'
-        global.colong2 = 'By Turbo & Ajmal'
+        global.colong2 = 'By Turbo'
         global.kontak2 = [
         ['916380260672', 'Turbo Mods', 'Bot Creator', 'turbobusiness0@gmail.com', true] ]
         global.bg = await (await fetch(img)).buffer()
