@@ -417,7 +417,7 @@ return conn.send2ButtonVid(m.chat, menuvideo, ori, ` *I Am Kakashi The Copy Ninj
      quoted: ftoko, 
      contextInfo: { forwardingScore: 99999, isForwarded: true, 
          externalAdReply: { 
-             title: 'Kakashi Md Testing Project By Turbo And Ajmal', 
+             title: 'Kakashi Md Testing Project By Turbo Mods', 
              body: `${pickRandom(['Kakashi Md'])}`, 
              description: `${pickRandom(['Kakashi Md'])}`, 
              mediaType: 2, 
