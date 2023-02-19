@@ -9,7 +9,7 @@ Dont be shy
 `.trim(), m)
     let mentionedJid = [m.sender]
 }
-handler.customPrefix = /@916380260672 |@918590508376/i
+handler.customPrefix = /@916380260672/i
 handler.command = new RegExp
 
 module.exports = handler
