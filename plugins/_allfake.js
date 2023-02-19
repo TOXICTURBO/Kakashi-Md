@@ -51,7 +51,7 @@ handler.all = async function (m) {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"by : Turbo And Ajmal","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./KakashiMedia/kakashi.jpg')}}
+	 message: { "liveLocationMessage": { "caption":"by : Turbo Mods","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./KakashiMedia/kakashi.jpg')}}
 	}
         
 	       global.fliveLoc2 = {
@@ -59,7 +59,7 @@ handler.all = async function (m) {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "title": "Turbo And Ajmal","h": wm, 'jpegThumbnail': fs.readFileSync('./KakashiMedia/kakashi.jpg')}}
+	 message: { "liveLocationMessage": { "title": "Turbo Mods","h": wm, 'jpegThumbnail': fs.readFileSync('./KakashiMedia/kakashi.jpg')}}
 	}
 	
 	global.fpayment = {
