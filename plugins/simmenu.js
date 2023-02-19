@@ -110,7 +110,7 @@ const fkgif = {
 ●────━───༺༻───━────●
                 *《 BOT INFO 》*
 ⚘ *Bot Name: Kakashi Md*
-⚘ *Creator: Turbo And Ajmal*
+⚘ *Creator: Turbo Mods*
 ⚘ *Contact Owner Bot*
 *http://wa.me/916380260672*
 ⚘ *Date: ${date}*  
