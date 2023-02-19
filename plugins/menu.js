@@ -271,7 +271,7 @@ ${'```%npmdesc```'}
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `Kakashi Md By Turbo And Ajmal`, 
+    message: `Kakashi Md By Turbo Mods`, 
     orderTitle: `▮Menu ▸`,
     thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),
     sellerJid: '0@s.whatsapp.net' 
@@ -328,7 +328,7 @@ ${'```%npmdesc```'}
 ●────━───༺༻───━────●
                 *《 BOT INFO 》*
 ⚘ *Bot Name: Kakashi Md*
-⚘ *Creator: Turbo And Ajmal*
+⚘ *Creator: Turbo Mods*
 ⚘ *Contact Owner Bot*
 *http://wa.me/916380260672*
 *http://wa.me/918270026275*
