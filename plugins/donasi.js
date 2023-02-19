@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => conn.sendButton(m.chat, `
 │ • And Keep Using Our Bot
 ╰────
 ╭─「 *NOTE* 」
-│ > If Anyone Telling That They Are Turbo Or Ajmal
+│ > If Anyone Telling That They Are Turbo Mods
 │ And Asking For Donation Dont Trust We Never Ask To Donate
 │ Turbo: wa.me/916380260672
 ╰────
