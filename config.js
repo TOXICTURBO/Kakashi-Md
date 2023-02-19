@@ -1,5 +1,4 @@
 let fs = require('fs')
-const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : process.env.DATABASE_URL
 global.botnamecon = process.env.BOT_NAME
 global.owner = process.env.OWNER // Put your number to /src/owner.json
 global.tagowner = process.env.TAG_OWNER // Put your number
