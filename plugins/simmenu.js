@@ -112,8 +112,7 @@ const fkgif = {
 ⚘ *Bot Name: Kakashi Md*
 ⚘ *Creator: Turbo And Ajmal*
 ⚘ *Contact Owner Bot*
-*http://wa.me/2347086086722*
-*http://wa.me/436993888888443*
+*http://wa.me/916380260672*
 ⚘ *Date: ${date}*  
 ⚘ *Time: ${time}*
 ⚘ *Status: 「 ${mode} 」*
@@ -140,8 +139,8 @@ const fkgif = {
 let ftt = `*Note:* If you find bugs, errors or difficulties in use, please report/ask the Owner
 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'2347086086722'.split('@')[0]}*
- *Powered By @${'436993888888443'.split('@')[0]}*`
+ *Powered By @${'916380260672'.split('@')[0]}*
+ *Powered By @${'918270026275'.split('@')[0]}*`
        let judul = `${ucapanl()}`.trim() 
        const sections = [
                               {
