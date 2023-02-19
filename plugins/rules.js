@@ -29,13 +29,13 @@ let handler = async (m, { conn }) => conn.send3ButtonImg(m.chat, await (await fe
 Be thankful because you dont have to pay to use this bot, use it wisely, dont over do it.
 
 Be a smart user and good luck!
-`.trim(), 'Kakashi Md ©2022 By Turbo And Ajmal', '⋮☰ Menu', '.menu', 'Owner', '.owner', 'Donate', '.donasi', m, {
+`.trim(), 'Kakashi Md ©2022 By Turbo', '⋮☰ Menu', '.menu', 'Owner', '.owner', 'Donate', '.donasi', m, {
     quoted: m,
     contextInfo: {
         externalAdReply: {
             title: 'Please follow the rules bro >~<',
-            body: `${pickRandom(['Kakashi Md','The Copy Ninja Kakashi Hatake 🔥','By Turbo And Ajmal'])}`,
-            description: `${pickRandom(['Kakashi Md','The Copy Ninja Kakashi Hatake 🔥','By Turbo And Ajmal'])}`,
+            body: `${pickRandom(['Kakashi Md','The Copy Ninja Kakashi Hatake 🔥','By Turbo'])}`,
+            description: `${pickRandom(['Kakashi Md','The Copy Ninja Kakashi Hatake 🔥','By Turbo'])}`,
             mediaType: 2,
           thumbnail: await (await fetch('https://i.imgur.com/3ZHCEZU.jpeg')).buffer(),
          mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}` 
