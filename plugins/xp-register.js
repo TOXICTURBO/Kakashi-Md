@@ -51,7 +51,7 @@ let fz = {
         }
      }
     })
-  if (!Reg.test(text)) return conn.sendButtonDoc(m.chat, `example:\n*${usedPrefix + command} TurboAndAjmal.18*`, wm, 'Menu', '.menu', m, {
+  if (!Reg.test(text)) return conn.sendButtonDoc(m.chat, `example:\n*${usedPrefix + command} Turbo.18*`, wm, 'Menu', '.menu', m, {
     quoted: fz,
     contextInfo: { forwardingScore: 99999, isForwarded: true,
         externalAdReply: {
@@ -102,7 +102,7 @@ conn.sendButtonDoc(m.chat, `
         externalAdReply: {
         	sourceUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`,
             title: 'Thank you for registering 🍃',
-            body: 'Kakashi Md By Turbo And Ajmal',
+            body: 'Kakashi Md By Turbo',
           thumbnail: await (await fetch(fla + 'Registered')).buffer()
         }
      }
