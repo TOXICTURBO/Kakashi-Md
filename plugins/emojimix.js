@@ -11,7 +11,7 @@ if (!args[0]) throw 'Examples of use:\n\n*.emojimix 🐷+😣*'
   conn.sendFile(m.chat, stek, 'kakashi.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true, contextInfo: {
-        externalAdReply: { showAdAttribution: true, title: 'Here bro/sis', body: `${pickRandom(['Turbo X Ajmal'])}`, sourceUrl: 'https://instagram/', thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
+        externalAdReply: { showAdAttribution: true, title: 'Here bro/sis', body: `${pickRandom(['Turbo Mods'])}`, sourceUrl: 'https://instagram/', thumbnail: await (await fetch('https://i.imgur.com/4rRZ4c7.jpeg')).buffer(),}} 
      })
 		}
 }
