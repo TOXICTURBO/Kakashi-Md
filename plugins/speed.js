@@ -66,7 +66,7 @@ Powered By ${ow}`
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-  await conn.send2ButtonDoc(m.chat, `ðŸ’¬ Status : 
+  await conn.send2ButtonDoc(m.chat, `Ã°Å¸â€™Â¬ Status : 
 *${groupsIn.length}* Group Chats
 *${groupsIn.length}* Groups Joined
 *${groupsIn.length - groupsIn.length}* Groups Left
@@ -84,13 +84,13 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type =>
 _CPU Core(s) Usage (${cpus.length} Core CPU)_
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
 `.trim(), ftr, 'Speedtest', usedPrefix + 'speedtest', 'Menu', usedPrefix + 'Menu', m, { 
- quoted: ftrol,
- contextInfo: {forwardingScore:99999,isForwarded:true, 
+ quoted:Â ftrol,
+ contextInfo:Â {forwardingScore:99999,isForwarded:true, 
  externalAdReply:{ 
  sourceUrl:`${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}`,
- title: `Respond in ${speed} milliseconds`, 
- body: '© Kakashi Md By Turbo And Ajmal', 
- thumbnail: await (await fetch(fla + 'Ping')).buffer()
+ title:Â `Respond in ${speed} milliseconds`, 
+ body:Â 'Â© Kakashi Md By Turbo Mods', 
+ thumbnail:Â awaitÂ (await fetch(fla + 'Ping')).buffer()
  } 
  } 
  }) 
