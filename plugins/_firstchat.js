@@ -19,7 +19,7 @@ handler.all = async function (m) {
          externalAdReply: { 
              title: 'Kakashi Whatsapp Md Bot', 
              body: `sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ`, 
-             description: `Turbo X Ajmal`, 
+             description: `Turbo Mods`, 
              mediaType: 2, 
            thumbnail: await genProfile(conn, m),
           mediaUrl: `${pickRandom([`https://www.facebook.com/`,`https://instagram.com/`,`https://github.com/`,`https://youtu.be/`])}` 
