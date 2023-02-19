@@ -8,8 +8,8 @@ let levelling = require('../lib/levelling')
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => { 
 	let hao = ` 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'2347086086722'.split('@')[0]}*
- *Powered By @${'918590508376'.split('@')[0]}*` 
+ *Powered By @${'916380260672'.split('@')[0]}*
+ *Powered By @${'918270026275'.split('@')[0]}*` 
   let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
