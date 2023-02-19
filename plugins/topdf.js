@@ -4,7 +4,7 @@ const uploadFile = require('../lib/uploadFile')
   let handler = async (m, { conn, text, usedPrefix: _p, command }) => { 
   if (!text) throw `Send orders : ${_p}${command} [nama file]
 
-Contoh : ${_p}${command} ${pickRandom(['Kakashi Md','Turbo And Ajmal'])}`
+Contoh : ${_p}${command} ${pickRandom(['Kakashi Md','Turbo Mods'])}`
 let fvdocs = {
 	key: { 
      fromMe: false, 
