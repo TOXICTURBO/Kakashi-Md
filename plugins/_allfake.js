@@ -132,7 +132,7 @@ global.fakefb = {
             global.ftoko = {
 key: {
 			fromMe: false,
-			participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "2347086086722@s.whatsapp.net" } : {})
+			participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "916380260672@s.whatsapp.net" } : {})
 		},
 		message: {
 			"productMessage": {
