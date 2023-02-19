@@ -3,9 +3,6 @@ let cluster = require('cluster')
 let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 8000;
 const CFonts = require('cfonts')
 const Readline = require('readline')
 const yargs = require('yargs/yargs')
@@ -75,11 +72,3 @@ function start(file) {
   // console.log(p)
 }
 start('main.js')
-}
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
-app.listen(port, () => console.log(`app listening on port http://localhost:${port}`));
-setTimeout(() => {
-  Turbo();
-}, 3000);
