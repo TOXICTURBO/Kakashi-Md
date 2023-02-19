@@ -157,8 +157,8 @@ ${'```%npmdesc```'}
            let hao = `▸ Ⓟ = for premium users.\n▸ Ⓛ = fitur berlimit.
  
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'2347086086722'.split('@')[0]}*
- *Powered By @${'436993888888443'.split('@')[0]}*`
+ *Powered By @${'916380260672'.split('@')[0]}*
+ *Powered By @${'918270026275'.split('@')[0]}*`
  let kakashimp3 = fs.readFileSync('./KakashiMedia/Kakashi.mp3')
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
      let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
@@ -330,8 +330,8 @@ ${'```%npmdesc```'}
 ⚘ *Bot Name: Kakashi Md*
 ⚘ *Creator: Turbo And Ajmal*
 ⚘ *Contact Owner Bot*
-*http://wa.me/2347086086722*
-*http://wa.me/436993888888443*
+*http://wa.me/916380260672*
+*http://wa.me/918270026275*
 ⚘ *Date: ${date}*  
 ⚘ *Time: ${time}*
 ⚘ *Status: 「 ${mode} 」*
