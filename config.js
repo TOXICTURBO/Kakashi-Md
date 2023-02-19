@@ -5,7 +5,7 @@ global.tagowner = process.env.TAG_OWNER // Put your number
 global.mods = process.env.MODS // Want some help?
 global.thumbt = fs.readFileSync('./KakashiMedia/kakashi.jpg')
 global.fsx = 999999999999
-global.contact = [['916380260672', 'Turbo Mods', true] ]
+global.contact = [['916380260672', 'Turbo Mods', true] ]
 global.APIs = { // API Prefix
   // name: 'https://website'
   turboapis: 'https://turboapis.herokuapp.com',
@@ -38,7 +38,7 @@ global.APIKeys = { // APIKey Here
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
-global.linkyt = process.env.YT_LINK
+global.linkyt = process.env.YT_LINK
 global.WM = process.env.WATER_MARK
 global.linkgc = process.env.GROUP_LINK
 global.linkig = process.env.INSTA_LINK
@@ -90,7 +90,6 @@ global.fs = require('fs')
 global.data = JSON.parse(fs.readFileSync('./data.json'))
 global.fetch = require('node-fetch')
 global.bochil = require('@bochilteam/scraper')
-DATABASE: DATABASE_URL === './database.db' ? new Sequelize({ dialect: 'sqlite', storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: 'postgres', ssl: true, protocol: 'postgres', dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false })
 
 global.rpg = {
   emoticon(string) {
